@@ -60,7 +60,7 @@ commit-lint-generator ./commitlintrc.js
 ```
 
 ## Support rules
-**Struct Parser**
+**Parser**
 - [ ] body-leading-blank
 - [ ] footer-leading-blank
 
