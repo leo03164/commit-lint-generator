@@ -9,8 +9,7 @@ import { ruleMap } from './rules/ruleMap.js';
 import { modal, setEditor, setTTY, setModalColor } from './utils/modal.js';
 import { styleChecker } from './rules/style.js';
 
-export async function init(params) {
-  console.log(params);
+export async function init() {
   const data = await loadConfig();
   const config = data.config;
 
@@ -51,5 +50,4 @@ export async function init(params) {
   console.log(i18next.t('git_hooks_already_update'));
 }
 
-const userParams = process.argv[2];
-init(userParams)
+init();
