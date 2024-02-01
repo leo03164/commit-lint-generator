@@ -1,0 +1,1 @@
+export const FILE_PERMISSION = 0o775;

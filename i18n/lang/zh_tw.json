@@ -1,0 +1,42 @@
+{
+  "header_case_always": "請重新檢查 header 是否符合指定的 {{ style }} 格式",
+  "header_case_never": "請重新檢查 header 是否包含非法的 {{ style }} 格式",
+  "header_full_stop_always": "請重新檢查 header 是否符合指定的結尾字元 「{{ char }}」",
+  "header_full_stop_never": "請重新檢查 header 是否包含非法的結尾字元 「{{ char }}」",
+  "header_max_length_always": "請重新檢查 header 是否超出最大長度限制 {{ length }}",
+  "header_max_length_never": "請重新檢查 header 是否小於最低長度限制 {{ length }}",
+  "header_min_length_always": "請重新檢查 header 是否小於最低長度限制 {{ length }}",
+  "header_min_length_never": "請重新檢查 header 是否大於最大長度限制 {{ length }}",
+  "header_trim_always": "請重新檢查 header 是否包含非法的開頭字元",
+  "header_trim_never": "請重新檢查 header 是否不包含指定的開頭字元",
+
+  "type_enum_always": "請重新檢查 type 是否在白名單中",
+  "type_enum_never": "請重新檢查 type 是否在黑名單中",
+  "type_case_always": "請重新檢查 type 是否符合指定的 {{ style }} 格式",
+  "type_case_never": "請重新檢查 type 是否為非法的 {{ style }} 格式",
+
+  "body_full_stop_always": "請重新檢查 body 是否符合指定的結尾字元 「{{ char }}」",
+  "body_full_stop_never": "請重新檢查 body 是否包含非法的結尾字元 「{{ char }}」",
+  "body_empty_always": "請保持 body 為空",
+  "body_empty_never": "請保持 body 非空字串",
+  "body_max_length_always": "請重新檢查 body 是否超出最大長度限制 {{ length }}",
+  "body_max_length_never": "請重新檢查 body 是否小於最低長度限制 {{ length }}",
+  "body_max_line-length_always": "請重新檢查 body 行數是否超出最大長度限制 {{ length }}",
+  "body_max_line-length_never": "請重新檢查 body 行數是否低於最低長度限制 {{ length }}",
+  "body_min_length_always": "請重新檢查 body 是否小於最低長度限制 {{ length }}",
+  "body_min_length_never": "請重新檢查 body 是否大於最大長度限制 {{ length }}",  
+  "body_case_always": "請重新檢查 body 是否符合指定的 {{ style }} 格式",
+  "body_case_never": "請重新檢查 body 包含非法的 {{ style }} 格式",
+
+  "footer_empty_always": "請保持 footer 為空",
+  "footer_empty_never": "請保持 footer 非空字串",
+  "footer_max_length_always": "請重新檢查 footer 是否超出最大長度限制 {{ length }}",
+  "footer_max_length_never": "請重新檢查 footer 是否小於最低長度限制 {{ length }}",
+  "footer_max_line-length_always": "請重新檢查 footer 行數是否超出最大長度限制 {{ length }}",
+  "footer_max_line-length_never": "請重新檢查 footer 行數是否低於最低長度限制 {{ length }}",
+  "footer_min_length_always": "請重新檢查 footer 是否小於最低長度限制 {{ length }}",
+  "footer_min_length_never": "請重新檢查 footer 是否大於最大長度限制 {{ length }}",
+
+  "load_file_error": "無法加載自定義配置檔案",
+  "git_hooks_already_update": "Git hooks 已更新。"
+}

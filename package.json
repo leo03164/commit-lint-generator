@@ -1,0 +1,26 @@
+{
+  "name": "commit-lint-generator",
+  "version": "1.0.0",
+  "description": "Commit Lint Generator is a versatile tool designed to enforce commit message guidelines within your development team.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "commitlint-generator": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo03164/commit-lint-generator.git"
+  },
+  "author": "leo03164",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leo03164/commit-lint-generator/issues"
+  },
+  "homepage": "https://github.com/leo03164/commit-lint-generator#readme",
+  "dependencies": {
+    "i18next": "^23.8.1"
+  }
+}

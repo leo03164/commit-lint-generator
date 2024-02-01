@@ -1,0 +1,42 @@
+{
+  "header_case_always": "Please recheck if the header conforms to the specified {{style}} format.",
+  "header_case_never": "Please recheck if the header includes any forbidden {{style}} format.",
+  "header_full_stop_always": "Please recheck if the header ends with the specified character '{{char}}'.",
+  "header_full_stop_never": "Please recheck if the header includes any forbidden ending character '{{char}}'.",
+  "header_max_length_always": "Please recheck if the header exceeds the maximum length limit of {{length}}.",
+  "header_max_length_never": "Please recheck if the header is shorter than the minimum length limit of {{length}}.",
+  "header_min_length_always": "Please recheck if the header is shorter than the minimum length limit of {{length}}.",
+  "header_min_length_never": "Please recheck if the header exceeds the maximum length limit of {{length}}.",
+  "header_trim_always": "Please recheck if the header contains any illegal starting characters.",
+  "header_trim_never": "Please recheck if the header does not contain the specified starting characters.",
+
+  "type_enum_always": "Please recheck if the type is in the whitelist.",
+  "type_enum_never": "Please recheck if the type is in the blacklist.",
+  "type_case_always": "Please recheck if the type conforms to the specified {{style}} format.",
+  "type_case_never": "Please recheck if the type is in an illegal {{style}} format.",
+
+  "body_full_stop_always": "Please recheck if the body ends with the specified character '{{char}}'.",
+  "body_full_stop_never": "Please recheck if the body includes any forbidden ending character '{{char}}'.",
+  "body_empty_always": "Please ensure the body remains empty.",
+  "body_empty_never": "Please ensure the body is not an empty string.",
+  "body_max_length_always": "Please recheck if the body exceeds the maximum length limit of {{length}}.",
+  "body_max_length_never": "Please recheck if the body is shorter than the minimum length limit of {{length}}.",
+  "body_max_line-length_always": "Please recheck if the number of lines in the body exceeds the maximum length limit of {{length}}.",
+  "body_max_line-length_never": "Please recheck if the number of lines in the body is below the minimum length limit of {{length}}.",
+  "body_min_length_always": "Please recheck if the body is shorter than the minimum length limit of {{length}}.",
+  "body_min_length_never": "Please recheck if the body exceeds the maximum length limit of {{length}}.",
+  "body_case_always": "Please recheck if the body conforms to the specified {{style}} format.",
+  "body_case_never": "Please recheck if the body contains any illegal {{style}} format.",
+  
+  "footer_empty_always": "Please ensure the footer remains empty.",
+  "footer_empty_never": "Please ensure the footer is not an empty string.",
+  "footer_max_length_always": "Please recheck if the footer exceeds the maximum length limit of {{length}}.",
+  "footer_max_length_never": "Please recheck if the footer is shorter than the minimum length limit of {{length}}.",
+  "footer_max_line-length_always": "Please recheck if the number of lines in the footer exceeds the maximum length limit of {{length}}.",
+  "footer_max_line-length_never": "Please recheck if the number of lines in the footer is below the minimum length limit of {{length}}.",
+  "footer_min_length_always": "Please recheck if the footer is shorter than the minimum length limit of {{length}}.",
+  "footer_min_length_never": "Please recheck if the footer exceeds the maximum length limit of {{length}}.",
+
+  "load_file_error": "Couldn't load the commitlintrc file",
+  "git_hooks_already_update": "Git hooks already updated。"
+}
