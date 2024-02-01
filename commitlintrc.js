@@ -14,7 +14,7 @@ export const config = [
         name: "header-max-length",
         level: 2,
         applicable: "always",
-        value: 10
+        value: 50
       },
       {
         name: "body-full-stop",
@@ -22,16 +22,16 @@ export const config = [
         applicable: "never",
         value: '.'
       },
-      {
-        name: 'body-empty',
-        level: 2,
-        applicable: "never",
-      },
-      {
-        name: 'footer-empty',
-        level: 2,
-        applicable: "never",
-      },
+      // {
+      //   name: 'body-empty',
+      //   level: 0,
+      //   applicable: "never",
+      // },
+      // {
+      //   name: 'footer-empty',
+      //   level: 0,
+      //   applicable: "never",
+      // },
       {
         name: 'type-enum',
         level: 2,
@@ -45,41 +45,41 @@ export const config = [
           'Fix',
         ]
       },
-      // {
-      //   name: 'type-case',
-      //   level: 2,
-      //   applicable: "always",
-      //   value: 'pascal-case',
-      // },
+      {
+        name: 'type-case',
+        level: 0,
+        applicable: "always",
+        value: 'pascal-case',
+      },
       // {
       //   name: 'header-case',
-      //   level: 2,
+      //   level: 0,
       //   applicable: "always",
       //   value: 'sentence-case',
       // },
       // {
       //   name: 'body-case',
-      //   level: 2,
+      //   level: 0,
       //   applicable: "always",
       //   value: 'start-case',
       // },
-      // {
-      //   name: 'header-full-stop',
-      //   level: 2,
-      //   applicable: "always",
-      //   value: '.',
-      // },
-      // {
-      //   name: "header-min-length",
-      //   level: 2,
-      //   applicable: "always",
-      //   value: 20
-      // },
-      // {
-      //   name: "header-trim",
-      //   level: 2,
-      //   applicable: "always",
-      // },
+      {
+        name: 'header-full-stop',
+        level: 2,
+        applicable: "never",
+        value: '.',
+      },
+      {
+        name: "header-min-length",
+        level: 2,
+        applicable: "always",
+        value: 4
+      },
+      {
+        name: "header-trim",
+        level: 2,
+        applicable: "always",
+      },
       {
         name: "body-max-line-length",
         level: 2,
@@ -90,32 +90,32 @@ export const config = [
         name: "footer-max-line-length",
         level: 2,
         applicable: "always",
-        value: 5
+        value: 1
       },
       {
         name: "body-max-length",
         level: 2,
         applicable: "always",
-        value: 20
+        value: 72
       },
       {
         name: "footer-max-length",
         level: 2,
         applicable: "always",
-        value: 10
+        value: 72
       },
-      {
-        name: "body-min-length",
-        level: 2,
-        applicable: "always",
-        value: 3
-      },
-      {
-        name: "footer-min-length",
-        level: 2,
-        applicable: "always",
-        value: 5
-      },
+      // {
+      //   name: "body-min-length",
+      //   level: 0,
+      //   applicable: "always",
+      //   value: 10
+      // },
+      // {
+      //   name: "footer-min-length",
+      //   level: 0,
+      //   applicable: "always",
+      //   value: 3
+      // },
     ]
   },
 ]
