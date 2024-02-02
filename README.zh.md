@@ -33,6 +33,7 @@ npm i -g commit-lint-generator
 export const config = [
   {
     hook: "觸發的 hook",
+    lang: "zh_tw",
     rules: [
       {
         name: "規則名稱",

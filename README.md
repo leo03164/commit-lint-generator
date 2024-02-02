@@ -32,6 +32,7 @@ The structure is defined as follows:
 export const config = [
   {
     hook: "the hook that triggers",
+    lang: "en_us",
     rules: [
       {
         name: "rule name",
