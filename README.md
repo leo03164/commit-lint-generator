@@ -53,7 +53,7 @@ export const config = [
 
 ### 4. Direct use
 ```bash
-commit-lint-generator
+commitlint-generator
 ```
 
 ## Support rules

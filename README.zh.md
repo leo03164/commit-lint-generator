@@ -54,9 +54,7 @@ export const config = [
 
 ### 4. 直接使用
 ```bash=
-commit-lint-generator configPath
-
-commit-lint-generator ./commitlintrc.js
+commitlint-generator
 ```
 
 ## Support rules
