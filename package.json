@@ -4,6 +4,10 @@
   "description": "Commit Lint Generator is a versatile tool designed to enforce commit message guidelines within your development team.",
   "type": "module",
   "main": "index.js",
+  "funding": {
+    "type": "individual",
+    "url": "https://ko-fi.com/leo03164"
+  },  
   "bin": {
     "commitlint-generator": "./index.js"
   },
