@@ -27,6 +27,8 @@
   "body_min_length_never": "Please recheck if the body exceeds the maximum length limit of {{length}}.",
   "body_case_always": "Please recheck if the body conforms to the specified {{style}} format.",
   "body_case_never": "Please recheck if the body contains any illegal {{style}} format.",
+  "body_leading_blank_always": "Please recheck if there is a blank line at the beginning of the body.",
+  "body_leading_blank_never": "Please recheck that there should not be a blank line at the beginning of the body.",
   
   "footer_empty_always": "Please ensure the footer remains empty.",
   "footer_empty_never": "Please ensure the footer is not an empty string.",

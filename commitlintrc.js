@@ -116,6 +116,11 @@ export const config = [
       //   applicable: "always",
       //   value: 3
       // },
+      {
+        name: 'body-leading-blank',
+        level: 2,
+        applicable: 'always',
+      },
     ]
   },
 ]

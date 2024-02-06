@@ -157,3 +157,22 @@ export function bodyMinLength(ruleConfig) {
 
   return bodyMinLength;
 }
+
+export function bodyLeadingBlank(ruleConfig) {
+  const { level = 0, applicable = 'always' } = ruleConfig;
+  if(level === 0) return '';
+
+  const bodyLeadingBlankStr= `
+  body_leading_blank() {
+    always_case=$([ -n "$BODY" ] && [ "${applicable}" = "always" ] && [ "$IS_BODY_LEADING_BLANK" != "true" ] && echo "true")
+    never_case=$([ -n "$BODY" ] && [ "${applicable}" = "never" ] && [ "$IS_BODY_LEADING_BLANK" = "true" ] && echo "true")
+
+    if [ "$always_case" = "true" ] || [ "$never_case" = "true" ]; then
+      modal "${level}" "${i18n.t(`body_leading_blank_${applicable}`)}"
+    fi
+  }
+  body_leading_blank
+  `;
+
+  return bodyLeadingBlankStr;
+}
