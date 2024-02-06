@@ -59,8 +59,7 @@ commitlint-generator
 
 ## Support rules
 **Parser**
-- [ ] body-leading-blank
-- [ ] footer-leading-blank
+- [x] body-leading-blank
 
 **Header**
 - [x] header-case
@@ -89,7 +88,6 @@ commitlint-generator
 
 ## Donation
 - **Ko-fi**: [![Donate with Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/leo03164)
-
 - **Buy Me a Coffee**: [![Donate with Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/leo03164)
 
 *Read this in other languages: [繁體中文](README.zh.md)*
