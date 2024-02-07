@@ -7,8 +7,8 @@ export function headerMaxLength(ruleConfig) {
   const headerMaxLengthStr = `
   headerMaxLength() {
     HEADER_LENGTH=\${#HEADER}
-    always_case=$([ $HEADER_LENGTH -gt ${value} ] && [ ${applicable} == "always" ] && echo "true")
-    never_case=$([ $HEADER_LENGTH -lt ${value} ] && [ ${applicable} == "never" ] && echo "true")
+    always_case=$([ $HEADER_LENGTH -gt ${value} ] && [ ${applicable} = "always" ] && echo "true")
+    never_case=$([ $HEADER_LENGTH -lt ${value} ] && [ ${applicable} = "never" ] && echo "true")
 
     # 根據條件判斷是否顯示 modal
     if [ "$always_case" = "true" ] || [ "$never_case" = "true" ]; then
@@ -69,11 +69,11 @@ export function headerFullStop(ruleConfig) {
 
   const checkHeaderLastWord = `
   check_header_last_word() {
-    local target="$HEADER"
-    local expected="${value}"
+    header_last_word="\${HEADER: -1}"
+    expected="${value}"
 
-    always_case=$([ "${applicable}" = "always" ] && [ "\${target: -1}" != "$expected" ] && echo "true")
-    never_case=$([ "${applicable}" = "never" ] && [ "\${target: -1}" = "$expected" ] && echo "true")
+    always_case=$([ "${applicable}" = "always" ] && [ "$header_last_word" != "$expected" ] && echo "true")
+    never_case=$([ "${applicable}" = "never" ] && [ "$header_last_word" = "$expected" ] && echo "true")
 
     if [ "$always_case" = "true" ] || [ "$never_case" = "true" ]; then
       modal "${level}" "${i18n.t(`header_full_stop_${applicable}`, { char: value })}"
