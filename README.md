@@ -14,7 +14,13 @@ Commit Lint Generator is a tool designed for inspecting commits. It takes a `com
 - Complies with most POSIX standards.
 - Supports any platform.
 
-## Basic Setup
+## Usage 1 (no env)
+Using Docker and mounting the project's `.git` and `commitlintrc.js`.
+```
+docker run -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js commitlint-generator
+```
+
+## Usage 2 (nodeJs)
 ### 1. Install nodejs
 If you do not have nodejs installed, please install it first.
 Version information: **`nodejs > 16.13.0`**
