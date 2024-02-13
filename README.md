@@ -7,6 +7,9 @@ Construct your team's commit rules through Javascript.
 
 *Read this in other languages: [繁體中文](README.zh.md)*
 
+<a href="https://www.npmjs.com/package/commit-lint-generator" target="_blank"><img src="https://img.shields.io/npm/v/commit-lint-generator" alt="NPM Version" /></a> <a href="https://www.npmjs.com/package/commit-lint-generator" target="_blank"><img src="https://img.shields.io/npm/dw/commit-lint-generator" alt="NPM Downloads" /></a> <img alt="NPM License" src="https://img.shields.io/npm/l/commit-lint-generator">
+
+
 ## Description
 Commit Lint Generator is a tool designed for inspecting commits. It takes a `commitlintrc.js` file as configuration, which defines `hooks` and various `rules`. You can specify the `rule` needed for inspection based on a particular hook. All available rules can be found at [commitlint](https://commitlint.js.org/#/reference-rules). For currently supported rules, refer to the Support rules section. Support for additional rules will be gradually added.
 
