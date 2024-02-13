@@ -66,8 +66,8 @@ export function bodyCase(ruleConfig) {
 
     style_result=$(check_style "${value}" "$REMOVED_EMPTY_LINE_BODY")
     
-    always_case=$([ ${applicable} = always ] && [ "$style_result" = "false" ] && echo "true")
-    never_case=$([ ${applicable} = never ] && [ "$style_result" != "false" ] && echo "true")
+    always_case=$([ -n "$BODY" ] && [ ${applicable} = always ] && [ "$style_result" = "false" ] && echo "true")
+    never_case=$([ -n "$BODY" ] && [ ${applicable} = never ] && [ "$style_result" != "false" ] && echo "true")
 
     if [ "$always_case" = "true" ] || [ "$never_case" = "true" ] ; then
       modal "${level}" "${i18n.t(`body_case_${applicable}`, { style: value })}"

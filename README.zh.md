@@ -14,7 +14,13 @@ Commit Lint Generator 是一個針對 commit 進行檢驗的工具，它會接�
 - 符合大部分 POSIX 規範
 - 支援任何平台
 
-## 基本設置
+## 使用方式1 (不建置環境)
+使用 docker 並且掛載專案的 `.git` 以及 `commitlintrc.js`
+```
+docker run -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js commitlint-generator
+```
+
+## 使用方式2 (nodeJs環境)
 ### 1. 安裝 nodejs
 如果你沒有 nodejs 請先安裝 nodejs
 版本資訊 **`nodejs > 16.13.0`**
