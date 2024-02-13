@@ -5,6 +5,8 @@
 透過 Javascript 建構團隊的 Commit 規則
 </div>
 
+<a href="https://www.npmjs.com/package/commit-lint-generator" target="_blank"><img src="https://img.shields.io/npm/v/commit-lint-generator" alt="NPM Version" /></a> <a href="https://www.npmjs.com/package/commit-lint-generator" target="_blank"><img src="https://img.shields.io/npm/dw/commit-lint-generator" alt="NPM Downloads" /></a> <img alt="NPM License" src="https://img.shields.io/npm/l/commit-lint-generator">
+
 ## 描述
 Commit Lint Generator 是一個針對 commit 進行檢驗的工具，它會接收一個 `commitlintrc.js` 作為設定檔，該檔案會定義包含 `hooks` 以及各種 `rule`，你可以針對特定的 hook 來指定需要檢查的 `rule`，你可以在 [commitlint](https://commitlint.js.org/#/reference-rules) 找到所有的 rules ，目前所支援的 rules 請參考 Support rules 章節，未來將會逐步支援其他的規則  
 
