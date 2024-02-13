@@ -14,23 +14,7 @@ Commit Lint Generator 是一個針對 commit 進行檢驗的工具，它會接�
 - 符合大部分 POSIX 規範
 - 支援任何平台
 
-## 使用方式1 (不建置環境)
-使用 docker 並且掛載專案的 `.git` 以及 `commitlintrc.js`
-```
-docker run --rm -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js leo03164/commitlint-generator
-```
-
-## 使用方式2 (node.js環境)
-### 1. 安裝 nodejs
-如果你沒有 nodejs 請先安裝 nodejs
-版本資訊 **`nodejs > 16.13.0`**
-
-### 2. 安裝必要套件
-```
-npm i -g commit-lint-generator
-```
-
-### 3. 定義規則
+## Pre-prepare (Define Rule)
 你可以在 `commitlintrc.js` 中定義團隊的 commit 規範。  
 `commitlintrc.js` 中匯出一個名為 `config` 的陣列，該陣列包含各個 `hooks` 所指定的規則
 
@@ -59,7 +43,23 @@ export const config = [
 ]
 ```
 
-### 4. 直接使用
+## 使用方式1 (不建置環境)
+使用 docker 並且掛載專案的 `.git` 以及 `commitlintrc.js`
+```
+docker run --rm -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js leo03164/commitlint-generator
+```
+
+## 使用方式2 (node.js環境)
+### 1. 安裝 nodejs
+如果你沒有 nodejs 請先安裝 nodejs
+版本資訊 **`nodejs > 16.13.0`**
+
+### 2. 安裝必要套件
+```
+npm i -g commit-lint-generator
+```
+
+### 3. 直接使用
 ```bash=
 commitlint-generator
 ```
