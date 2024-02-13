@@ -16,22 +16,8 @@ Commit Lint Generator is a tool designed for inspecting commits. It takes a `com
 - Complies with most POSIX standards.
 - Supports any platform.
 
-## Usage 1 (no env)
-Using Docker and mounting the project's `.git` and `commitlintrc.js`.
-```
-docker run --rm -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js leo03164/commitlint-generator
-```
-
-## Usage 2 (node.js)
-### 1. Install nodejs
-If you do not have nodejs installed, please install it first.
-Version information: **`nodejs > 16.13.0`**
-
-### 2. Install required packages
-> npm i -g commit-lint-generator
-
-
-### 3. Define rules
+## Pre-prepare
+Define rules
 You can define your team's commit standards in `commitlintrc.js`.  
 `commitlintrc.js` exports an array named `config`, containing rules specified for each `hook`.
 
@@ -60,7 +46,22 @@ export const config = [
 ]
 ```
 
-### 4. Direct use
+## Usage 1 (no env)
+### Generate lint
+Using Docker and mounting the project's `.git` and `commitlintrc.js`.
+```
+docker run --rm -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js leo03164/commitlint-generator
+```
+
+## Usage 2 (node.js)
+### 1. Install nodejs
+If you do not have nodejs installed, please install it first.
+Version information: **`nodejs > 16.13.0`**
+
+### 2. Install required packages
+> npm i -g commit-lint-generator
+
+### 3. Direct use
 ```bash
 commitlint-generator
 ```
