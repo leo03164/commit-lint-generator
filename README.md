@@ -5,6 +5,8 @@
 Construct your team's commit rules through Javascript.
 </div>
 
+*Read this in other languages: [繁體中文](README.zh.md)*
+
 ## Description
 Commit Lint Generator is a tool designed for inspecting commits. It takes a `commitlintrc.js` file as configuration, which defines `hooks` and various `rules`. You can specify the `rule` needed for inspection based on a particular hook. All available rules can be found at [commitlint](https://commitlint.js.org/#/reference-rules). For currently supported rules, refer to the Support rules section. Support for additional rules will be gradually added.
 
@@ -17,10 +19,10 @@ Commit Lint Generator is a tool designed for inspecting commits. It takes a `com
 ## Usage 1 (no env)
 Using Docker and mounting the project's `.git` and `commitlintrc.js`.
 ```
-docker run -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js commitlint-generator
+docker run --rm -v $(pwd)/.git:/app/.git -v $(pwd)/commitlintrc.js:/app/commitlintrc.js leo03164/commitlint-generator
 ```
 
-## Usage 2 (nodeJs)
+## Usage 2 (node.js)
 ### 1. Install nodejs
 If you do not have nodejs installed, please install it first.
 Version information: **`nodejs > 16.13.0`**
@@ -95,5 +97,3 @@ commitlint-generator
 ## Donation
 - **Ko-fi**: [![Donate with Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/leo03164)
 - **Buy Me a Coffee**: [![Donate with Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/leo03164)
-
-*Read this in other languages: [繁體中文](README.zh.md)*
